@@ -1,0 +1,27 @@
+{
+  "name": "com.ligofff.lgf-ui-content-fitters",
+  "displayName": "Ligofff - LGF UI Content Fitters",
+  "version": "0.1.0",
+  "unity": "2022.2",
+  "description": "Just a little pack of components, that help you with unity UI building",
+  "keywords": [
+    "unity",
+	"unity3d",
+	"upm",
+    "ligofff",
+    "utility"
+  ],
+  "homepage": "https://github.com/ligofff/lgf-ui-content-fitters.git",
+  "bugs": {
+    "url": "https://github.com/ligofff/lgf-ui-content-fitters/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ligofff/lgf-ui-content-fitters.git"
+  },
+  "license": "MIT",
+  "author": "Ligofff (https://ligofff.com)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
