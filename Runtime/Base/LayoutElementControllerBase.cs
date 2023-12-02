@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Layout.LayoutControllerOptions;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -120,7 +121,14 @@ namespace Layout
             if (!IsActive())
                 return;
 
-            LayoutRebuilder.MarkLayoutForRebuild(ThisRect);
+            try
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(ThisRect);
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning($"[{this.GetType().Name}]\nException while updating layout: {e}");
+            }
         }
 
         protected void UpdateLayout()
